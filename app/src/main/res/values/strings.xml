@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">test_work</string>
+    <string name="go">Поехали</string>
+    <string name="good">Хорошо</string>
+    <string name="pay_directly_in_the_app">Оплачивайте прямо в приложении</string>
+    <string name="logo_icon">logo icon</string>
+    <string name="card_icon">card icon</string>
+    <string name="clearly">Понятно</string>
+    <string name="order_hotel_services_from_anywhere_online">Заказывайте услуги отеля из любого места онлайн</string>
+    <string name="bell_icon">bell icon</string>
+    <string name="lets_go">Поехали!</string>
+    <string name="name">Имя</string>
+    <string name="profile_icon">profile icon</string>
+    <string name="surname">Фамилия</string>
+    <string name="phone_number">Телефон</string>
+    <string name="by_clicking_save_I_agree_to_the_terms_of_the_service_and_the_privacy_policy">Нажимая сохранить я соглашаюсь с\n правилами сервиса  и политикой\n конфиденциальности</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="save">Сохранить</string>
+</resources>

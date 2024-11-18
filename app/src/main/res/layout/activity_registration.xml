@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registrationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/nameLL"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/background_with_shadow"
+        android:elevation="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/profile_icon"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/profile_icon" />
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/philosopher"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/surnameLL"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background_with_shadow"
+        android:elevation="5dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/nameLL"
+        app:layout_constraintStart_toStartOf="@+id/nameLL"
+        app:layout_constraintTop_toBottomOf="@+id/nameLL">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/profile_icon"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/profile_icon" />
+
+        <EditText
+            android:id="@+id/surnameET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/philosopher"
+            android:hint="@string/surname"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLL"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:elevation="5dp"
+        android:background="@drawable/background_with_shadow"
+
+        app:layout_constraintEnd_toEndOf="@+id/surnameLL"
+        app:layout_constraintStart_toStartOf="@+id/surnameLL"
+        app:layout_constraintTop_toBottomOf="@+id/surnameLL">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/profile_icon"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/mail_icon"/>
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/philosopher"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLL"
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:elevation="5dp"
+        android:background="@drawable/background_with_shadow"
+
+        app:layout_constraintEnd_toEndOf="@+id/emailLL"
+        app:layout_constraintStart_toStartOf="@+id/emailLL"
+        app:layout_constraintTop_toBottomOf="@+id/emailLL">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/profile_icon"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/lock_icon"/>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/philosopher"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/philosopher"
+        android:gravity="center"
+        android:text="@string/by_clicking_save_I_agree_to_the_terms_of_the_service_and_the_privacy_policy"
+
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLL"
+        app:layout_constraintStart_toStartOf="@+id/passwordLL"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLL" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        style="@style/CustomButtonStyle"
+        android:text="@string/save"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
