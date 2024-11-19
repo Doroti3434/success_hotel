@@ -106,7 +106,7 @@
             tools:src="@drawable/mail_icon"/>
 
         <EditText
-            android:id="@+id/emailET"
+            android:id="@+id/reg_emailET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -143,7 +143,7 @@
             tools:src="@drawable/lock_icon"/>
 
         <EditText
-            android:id="@+id/passwordET"
+            android:id="@+id/reg_passwordET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"

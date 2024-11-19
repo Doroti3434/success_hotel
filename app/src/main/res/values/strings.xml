@@ -17,4 +17,7 @@
     <string name="email">Почта</string>
     <string name="password">Пароль</string>
     <string name="save">Сохранить</string>
+    <string name="enter">Войти</string>
+    <string name="closed_eye">closed eye</string>
+    <string name="registration">Регистрация</string>
 </resources>

@@ -22,9 +22,19 @@
 
     <fragment android:id="@+id/thirdFragment"
         android:name="com.dorinidelishki.test_work.fragments.ThirdFragment"
-        tools:layout="@layout/fragment_third"/>
+        tools:layout="@layout/fragment_third">
+        <action android:id="@+id/actionThirdToLogin"
+            app:destination="@id/loginActivity"/>
 
+    </fragment>
+    <activity android:id="@+id/loginActivity"
+        android:name="com.dorinidelishki.test_work.LoginActivity"
+        tools:layout="@layout/activity_login"/>
 
 
 
 </navigation>
+
+
+
+
