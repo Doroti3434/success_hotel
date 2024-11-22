@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.dorinidelishki.test_work.RegistrationActivity" />
-        <activity android:name="com.dorinidelishki.test_work.LoginActivity" />
+        <activity android:name="com.dorinidelishki.test_work.LoginActivity" android:theme="@style/Base.Theme.Test_work"/>
 
         <meta-data
             android:name="preloaded_fonts"
