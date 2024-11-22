@@ -1,15 +1,15 @@
-package com.dorinidelishki.test_work
+package com.dorinidelishki.test_work.view.activity
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import com.dorinidelishki.test_work.databinding.ActivityLoginBinding
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
+import androidx.appcompat.app.AppCompatActivity
+import com.dorinidelishki.test_work.R
 
 
-
-class LoginActivity: Activity() {
+class LoginActivity: AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,22 +1,22 @@
-package com.dorinidelishki.test_work.fragments
+package com.dorinidelishki.test_work.view.fragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.dorinidelishki.test_work.R
-import com.dorinidelishki.test_work.databinding.FragmentSecondBinding
+import com.dorinidelishki.test_work.databinding.FragmentFirstBinding
 
-class SecondFragment: Fragment(R.layout.fragment_second) {
+class FirstFragment: Fragment(R.layout.fragment_first){
 
-    private var binding: FragmentSecondBinding? = null
+    private var binding: FragmentFirstBinding? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentSecondBinding.bind(view)
+        binding = FragmentFirstBinding.bind(view)
 
-        binding?.goodButton?.setOnClickListener {
-            findNavController().navigate(SecondFragmentDirections.actionSecondToThird())
+        binding?.okButton?.setOnClickListener {
+            findNavController().navigate(FirstFragmentDirections.actionFirstToSecond())
         }
     }
 

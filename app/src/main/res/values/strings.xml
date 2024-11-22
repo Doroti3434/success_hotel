@@ -20,4 +20,7 @@
     <string name="enter">Войти</string>
     <string name="closed_eye">closed eye</string>
     <string name="registration">Регистрация</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="check_out">Выселиться</string>
+    <string name="log_out">Выйти из аккаунта</string>
 </resources>

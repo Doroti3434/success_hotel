@@ -6,7 +6,7 @@
     app:startDestination="@id/firstFragment">
 
     <fragment android:id="@+id/firstFragment"
-        android:name="com.dorinidelishki.test_work.fragments.FirstFragment"
+        android:name="com.dorinidelishki.test_work.view.fragment.FirstFragment"
         tools:layout="@layout/fragment_first">
 
         <action android:id="@+id/actionFirstToSecond"
@@ -14,21 +14,21 @@
     </fragment>
 
     <fragment android:id="@+id/secondFragment"
-        android:name="com.dorinidelishki.test_work.fragments.SecondFragment"
+        android:name="com.dorinidelishki.test_work.view.fragment.SecondFragment"
         tools:layout="@layout/fragment_second">
         <action android:id="@+id/actionSecondToThird"
             app:destination="@+id/thirdFragment"/>
     </fragment>
 
     <fragment android:id="@+id/thirdFragment"
-        android:name="com.dorinidelishki.test_work.fragments.ThirdFragment"
+        android:name="com.dorinidelishki.test_work.view.fragment.ThirdFragment"
         tools:layout="@layout/fragment_third">
         <action android:id="@+id/actionThirdToLogin"
             app:destination="@id/loginActivity"/>
 
     </fragment>
     <activity android:id="@+id/loginActivity"
-        android:name="com.dorinidelishki.test_work.LoginActivity"
+        android:name="com.dorinidelishki.test_work.view.activity.LoginActivity"
         tools:layout="@layout/activity_login"/>
 
 

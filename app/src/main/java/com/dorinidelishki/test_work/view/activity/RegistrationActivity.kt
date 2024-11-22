@@ -1,10 +1,10 @@
-package com.dorinidelishki.test_work
+package com.dorinidelishki.test_work.view.activity
 
-import android.app.Activity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.dorinidelishki.test_work.databinding.ActivityRegistrationBinding
 
-class RegistrationActivity: Activity() {
+class RegistrationActivity: AppCompatActivity() {
     private lateinit var binding: ActivityRegistrationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
