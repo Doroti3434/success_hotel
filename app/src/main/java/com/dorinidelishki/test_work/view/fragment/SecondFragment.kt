@@ -9,19 +9,19 @@ import com.dorinidelishki.test_work.databinding.FragmentSecondBinding
 
 class SecondFragment: Fragment(R.layout.fragment_second) {
 
-    private var binding: FragmentSecondBinding? = null
+    private lateinit var binding: FragmentSecondBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSecondBinding.bind(view)
 
-        binding?.goodButton?.setOnClickListener {
+        binding.goodButton.setOnClickListener {
             findNavController().navigate(SecondFragmentDirections.actionSecondToThird())
         }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        binding = null
+
     }
 }

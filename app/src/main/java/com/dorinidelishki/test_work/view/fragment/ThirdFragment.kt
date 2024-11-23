@@ -9,19 +9,15 @@ import com.dorinidelishki.test_work.databinding.FragmentThirdBinding
 
 class ThirdFragment: Fragment(R.layout.fragment_third) {
 
-    private var binding: FragmentThirdBinding? = null
+    private lateinit var binding: FragmentThirdBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentThirdBinding.bind(view)
 
-        binding?.letsGoButton?.setOnClickListener {
+        binding.letsGoButton.setOnClickListener {
             findNavController().navigate(ThirdFragmentDirections.actionThirdToLogin())
         }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        binding = null
-    }
 }

@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_icon" />
+        app:srcCompat="@drawable/ic_logo" />
 
     <ImageView
         android:id="@+id/card_icon"
@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_icon"
-        app:srcCompat="@drawable/bell_icon"
+        app:srcCompat="@drawable/ic_bell"
         tools:ignore="ImageContrastCheck" />
 
     <TextView

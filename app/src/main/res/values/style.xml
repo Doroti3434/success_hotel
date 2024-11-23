@@ -11,6 +11,14 @@
         <item name="android:fontFamily">@font/philosopher_bold</item>
     </style>
 
+    <style name="CustomLinearLayout">
+        <item name="android:background">@drawable/background_with_shadow</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
     <style name="CustomTransparentButtonStyle" parent="Widget.AppCompat.Button">
         <item name="backgroundTint">@null</item>
         <item name="android:textAllCaps">false</item>

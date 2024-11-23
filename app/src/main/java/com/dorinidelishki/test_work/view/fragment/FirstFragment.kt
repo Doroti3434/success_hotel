@@ -9,19 +9,14 @@ import com.dorinidelishki.test_work.databinding.FragmentFirstBinding
 
 class FirstFragment: Fragment(R.layout.fragment_first){
 
-    private var binding: FragmentFirstBinding? = null
+    private lateinit var binding: FragmentFirstBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentFirstBinding.bind(view)
 
-        binding?.okButton?.setOnClickListener {
+        binding.okButton.setOnClickListener {
             findNavController().navigate(FirstFragmentDirections.actionFirstToSecond())
         }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        binding = null
     }
 }

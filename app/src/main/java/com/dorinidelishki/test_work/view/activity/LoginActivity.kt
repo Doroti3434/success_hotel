@@ -24,7 +24,6 @@ class LoginActivity: AppCompatActivity() {
         }
 
         var isPasswordVisible = false
-
         binding.eyeIV.setOnClickListener {
             isPasswordVisible = !isPasswordVisible
             if (isPasswordVisible) {
@@ -38,6 +37,12 @@ class LoginActivity: AppCompatActivity() {
              }
              binding.loginPasswordET.setSelection(binding.loginPasswordET.text.length)
         }
+
+        binding.loginButton.setOnClickListener {
+            var loginEmail = binding.loginEmailET.text.toString()
+            var loginPassword = binding.loginPasswordET.text.toString()
+        }
+
 
     }
 
