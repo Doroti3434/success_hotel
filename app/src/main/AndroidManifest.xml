@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -23,6 +24,7 @@
         </activity>
         <activity android:name="com.dorinidelishki.test_work.view.activity.RegistrationActivity" />
         <activity android:name="com.dorinidelishki.test_work.view.activity.LoginActivity" android:theme="@style/Base.Theme.Test_work"/>
+        <activity android:name="com.dorinidelishki.test_work.view.activity.CheckInActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

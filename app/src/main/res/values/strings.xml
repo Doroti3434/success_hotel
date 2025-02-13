@@ -29,6 +29,7 @@
     <string name="hotel_room">Номер</string>
     <string name="icon_data">icon data</string>
     <string name="check_in_date">Дата заезда</string>
-    <string name="or">Или</string>
+    <string name="or">или</string>
     <string name="scan_qr">Сканировать QR</string>
+    <string name="done">Готово</string>
 </resources>

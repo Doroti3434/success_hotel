@@ -25,4 +25,7 @@
         <item name="android:fontFamily">@font/philosopher_bold</item>
     </style>
 
+    <style name="CustomDropdownStyle" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
 </resources>
